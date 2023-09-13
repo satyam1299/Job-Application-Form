@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">  
+</head>
+<body>
+    <div class="sat">
+        <div class="title"><h1>Job Application Form</h1></div>
+        <form >
+            <div class="sub_title">PERSONAL INFORMATION</div>
+            <table>  
+                <tr>
+                    <td>  
+                        <label><b>Name</b></label>
+                    </td>
+                    <td>
+                            <input class="des" type="text" name="first_name" placeholder="Firstname" size="15" required>
+                            <input class="des" type="text" name="middle_name" placeholder="Middlename" size="15" required>   
+                            <input class="des" type="text" name="last_name" placeholder="Lastname" size="15" required>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><b>Gender</b></label>
+                    </td>
+                    <td>
+                        <Select class="des">
+                            <option disabled="disabled" selected="selected">--choose--</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </Select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><b>Date of birth</b></label>
+                    </td>
+                    <td>
+                        <input class="des" type="date" value="dob" required>
+                
+                    </td>
+                </tr>
+                <tr>
+                    <td>        
+                        <label><b>Address</b></label>
+                    </td>
+                    <td>
+                        <textarea class="des"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>        
+                        <label><b>Pincode</b></label>
+                    </td>
+                    <td>
+                        <input class="des" type="text" size="6" maxlength="6" required>
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="sub_title">EDUCATION QUALIFICATIONS</div>
+            <table>
+                <thead align="center">
+                    <tr>
+                        <th>S NO.</th>
+                        <th>SCHOOL/UNIVERSITY NAME</th>
+                        <th>BOARD</th>
+                        <th>PERCENTAGE OBTAINED (%)</th>
+                        <th>PASS/FAIL</th>
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td>1</td>
+                        <td><input class="des" type="text"></td>
+                        <td><input class="des" type="text"></td>
+                        <td><input class="des" type="text" maxlength=5></td>
+                        <td><Select class="des">
+                            <option disabled="disabled" selected="selected">--P/F--</option>
+                            <option>PASS</option>
+                            <option>FAIL</option>
+                        </Select></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input class="des" type="text"></td>
+                        <td><input class="des" type="text"></td>
+                        <td><input class="des" type="text" maxlength=5></td>
+                        <td><Select class="des">
+                            <option disabled="disabled" selected="selected">--P/F--</option>
+                            <option>PASS</option>
+                            <option>FAIL</option>
+                        </Select></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><input class="des" type="text"></td>
+                        <td><input class="des" type="text"></td>
+                        <td><input class="des" type="text" maxlength=5></td>
+                        <td><Select class="des">
+                            <option disabled="disabled" selected="selected">--P/F--</option>
+                            <option>PASS</option>
+                            <option>FAIL</option>
+                        </Select></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><input class="des" type="text"></td>
+                        <td><input class="des" type="text"></td>
+                        <td><input class="des" type="text" maxlength=5></td>
+                        <td><Select class="des">
+                            <option disabled="disabled" selected="selected">--P/F--</option>
+                            <option>PASS</option>
+                            <option>FAIL</option>
+                        </Select></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+
+            <div class="sub_title">CONTACT DETAILS</div>
+            <table>
+                <tr>
+                    <td>
+                        <label><b>Phone number</b></label>
+                    </td>
+                    <td>
+                        <Select class="des">
+                            <option disabled="disabled" selected="selected">---</option>
+                            <option>+91</option>
+                        </Select>
+                        <input class="des" type="tel" id="phone_number" maxlength="10" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email"><b>E-mail address</b></label>
+                    </td>
+                    <td>
+                        <input class="des" type="email" id="email" name="email" placeholder="Enter e-mail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pwd"><b>Password</b></label>
+                    </td>
+                    <td>
+                        <input class="des" type="password" id="pwd" placeholder="Enter password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="retype_pwd"><b>Retype Password</b></label>
+                    </td>
+                    <td>
+                        <input class="des" type="password" id="retype_pwd" placeholder="Retype your password" required>
+                    </td>
+                </tr>
+                </table>
+                <div class="sub_title">OTHER</div>
+                <table><tr>
+                    <td>
+                        <b>Do you speak any foreign language(s) besides English ?</b>
+                    </td>
+                    <td>
+                        <input type="checkbox">Arabic&emsp;
+                        <input type="checkbox">Chinese&emsp;
+                        <input type="checkbox">Dutch&emsp;
+                        <input type="checkbox">French&emsp;
+                        <input type="checkbox">Japenese&emsp;
+                        <input type="checkbox">Korean&emsp;
+                        <input type="checkbox">Portugese&emsp;
+                        <input type="checkbox">Russian&emsp;
+                        <input type="checkbox">Spanish&emsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Do you have a laptop/pc ?</b>
+                    </td>
+                    <td>
+                        <input type="radio" id="yes" name="opt2">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="opt2">
+                        <label for="no">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Can you work from home ?</b>
+                    </td>
+                    <td>
+                        <input type="radio" id="yes" name="opt3">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="opt3">
+                        <label for="no">No</label>
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="sub_title">UPLOAD DOCUMENTS</div>
+            <table>
+                <tr>
+                    <td>
+                        <label for="pic"><b>Upload picture:</b></label><br>
+                    </td>
+                    <td>
+                        <input class="des" type="file" id="pic" accept="img/png,image/jpeg">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="adhaar"><b>Upload your adhaar card</b></label>
+                    </td>
+                    <td>
+                        <input class="des" type="file" id="adhaar" accept="img/png,image/jpeg">
+                    </td>
+                </tr>
+            </table>
+            
+            <button type="submit" class="btn"><b>Submit</b></button>
+        </form>
+    </div>
+</body>
+</html>
